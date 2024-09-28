@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Score Array</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container {
+                padding: 10px 40px;
+                border: 3px solid blue;
+                border-radius: 6px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 6px 20px rgba(0, 0, 0, 0.1);
+                width: 40%;
+            }
+            h1, h2 {
+                color: blue;
+            }
+            form {
+                margin-bottom: 20px;
+            }
+            label {
+                display: inline-block;
+                width: 80px;
+            }
+            input {
+                margin-bottom: 10px;
+            }
+            button {
+                margin-right: 10px;
+            }
+            /* Styling for table */
+            table {
+                border-collapse: collapse;
+                width: 50%;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            td {
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Use a Test Score array</h1>
+
+            <!-- Form section with name, score, and buttons -->
+            <form id="scoreForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="score">Score:</label>
+                    <input type="number" id="score" min="0" max="100">
+                </div>
+                <div>
+                    <button type="button" id="add">Add to Array</button>
+                    <button type="button" id="displayResults">Display
+                        Results</button>
+                    <button type="button" id="displayScores">Display
+                        Scores</button>
+                </div>
+            </form>
+
+            <!-- Results section -->
+            <div id="results"></div>
+
+            <!-- Scores section -->
+            <h2>Scores</h2>
+
+            <table id="scores_list">
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </table>
+        </div>
+
+        <script src="../JavaScript_Files/main_04.js"></script>
+    </body>
+</html>
