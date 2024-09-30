@@ -1,0 +1,14 @@
+#tableGarden {
+    margin-top: 20px;
+}
+
+#tabCon {
+    border-collapse: collapse;
+    
+}
+
+#tabCon, th, td {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 6px;
+}
