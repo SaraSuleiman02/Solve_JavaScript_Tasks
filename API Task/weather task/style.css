@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+.card {
+    width: 50%;
+    border-radius: 6px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #02e3eb, 	#5b548a);
+    box-shadow: 0 0 10px rgba(244, 244, 244, 0.5);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+}
+
+.search {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.search input {
+    width: 90%;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+.search button {
+    border: 0;
+    background: #ebfffc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+    height: 16px;
+}
+
+.temp, .city {
+    color: white;
+}
+
+.temp {
+    font-size: 60px;
+}
+
+.city {
+    font-size: 50px;
+}
+
+.details {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.col {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: white;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.humidity, .wind {
+    font-size: 20px;
+    margin-top: -6px;
+    margin-bottom: 6px;
+}
