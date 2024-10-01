@@ -67,6 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
     gardenInfo.push(new gardenFlower(name, season, flower));
 
     addRow();
+    gardenIntoLocalStorage();
+    gardenOutLocalStorage();
   }
 
   function addRow() {
@@ -188,4 +190,22 @@ document.addEventListener("DOMContentLoaded", function () {
     tdFo.colSpan = 6;
     tdFo.style.textAlign = "center";
   }
+
+
+  function gardenIntoLocalStorage() {
+    let gardenData = JSON.stringify(gardenInfo);
+    localStorage.setItem("localData", gardenData);
+}
+
+function gardenOutLocalStorage() {
+    let dataGarden = localStorage.getItem("localData");
+    let gardenData = JSON.parse(dataGarden);
+
+    if (dataGarden !== null) {
+        for (let i = 0; i < gardenData.length; i++) {
+            new gardenFlower(gardenData[i].name, gardenData[i].season, gardenData[i].flower, gardenData[i].salary);
+        }
+        addRow();
+    }
+}
 });
