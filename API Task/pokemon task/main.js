@@ -1,10 +1,10 @@
 'use strict'
 
-const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=10";
+const apiURL = "https://pokeapi.co/api/v2/pokemon?limit=105";
 
 
 fetch(apiURL)
-  .then((response) => response.json())
+  .then((response) => {return response.json()})
   .then((data) => {
     const pokemonContainer = document.getElementById("pokemon-container");
 
