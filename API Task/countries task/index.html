@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+
+    <style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .box img {
+        max-height: 100px;
+    }
+
+    .box h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    p{
+        color: darkgrey;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="country-container"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

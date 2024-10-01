@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const priceCell = row.querySelector("td:nth-child(5)");
     const rowPrice = parseFloat(priceCell.textContent);
     // console.log(rowPrice);
-    
 
     // Subtract the row price from the total priceSum
     priceSum -= rowPrice;
@@ -191,21 +190,25 @@ document.addEventListener("DOMContentLoaded", function () {
     tdFo.style.textAlign = "center";
   }
 
-
   function gardenIntoLocalStorage() {
     let gardenData = JSON.stringify(gardenInfo);
     localStorage.setItem("localData", gardenData);
-}
+  }
 
-function gardenOutLocalStorage() {
+  function gardenOutLocalStorage() {
     let dataGarden = localStorage.getItem("localData");
     let gardenData = JSON.parse(dataGarden);
 
     if (dataGarden !== null) {
-        for (let i = 0; i < gardenData.length; i++) {
-            new gardenFlower(gardenData[i].name, gardenData[i].season, gardenData[i].flower, gardenData[i].salary);
-        }
-        addRow();
+      for (let i = 0; i < gardenData.length; i++) {
+        new gardenFlower(
+          gardenData[i].name,
+          gardenData[i].season,
+          gardenData[i].flower,
+          gardenData[i].salary
+        );
+      }
+      addRow();
     }
-}
+  }
 });
