@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get the price from the row before removing it
     const priceCell = row.querySelector("td:nth-child(5)");
     const rowPrice = parseFloat(priceCell.textContent);
-    console.log(rowPrice);
+    // console.log(rowPrice);
     
 
     // Subtract the row price from the total priceSum
